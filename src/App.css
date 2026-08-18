@@ -1,0 +1,13 @@
+
+.board-grid {
+  background-color: black;
+  column-count: 3;
+  column-gap: 1em;
+}
+
+.board-item {
+    margin-bottom: 1em;
+    img{
+      border-radius: 8px;
+    }
+}
