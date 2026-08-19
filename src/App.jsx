@@ -6,7 +6,7 @@ function App() {
 
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(2);
   const [endReached, setEndReached] = useState(false);
   const [prevScrolledFromTop, setScrolledFromTop] = useState(0);
 
