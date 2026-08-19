@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import loadingGif from './assets/loading.gif';
 
 function App() {
 
@@ -66,7 +67,7 @@ function App() {
 
   return (
     <>
-      {loading && prevScrolledFromTop == 0 && <img src="/src/assets/loading.gif" alt="Loading..." style={{ marginLeft: "50%", marginTop: "50px", height: "150px", width: "150px" }} />}
+      {loading && prevScrolledFromTop == 0 && <img src={loadingGif} alt="Loading..." style={{ marginLeft: "50%", marginTop: "50px", height: "150px", width: "150px" }} />}
       <div className="board-grid scrollable-div" style={{ textAlign: "center", marginTop: "50px" }}>
         {
           images.map((file, index) => (
@@ -78,7 +79,7 @@ function App() {
         }
 
       </div>
-      {loading && <img src="/src/assets/loading.gif" alt="Loading..." style={{ marginLeft: "50%", marginTop: "50px", height: "150px", width: "150px" }} />}
+      {loading && <img src={loadingGif} alt="Loading..." style={{ marginLeft: "50%", marginTop: "50px", height: "150px", width: "150px" }} />}
     </>
   )
 }
